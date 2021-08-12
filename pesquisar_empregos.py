@@ -95,14 +95,5 @@ for skills in lista_de_skills:
 
 gerar_csv("dados_das_vagas", info_das_vagas_list)
 gerar_csv("quantidade_de_vagas", quantidade_de_vagas_list)
-'''
-dados_df = pd.DataFrame(info_das_vagas_list)
-dados_df.to_csv('vagas_dados.csv', index = False, encoding = 'utf-8-sig')
-
-quantidade_vaga_df = pd.DataFrame(quantidade_de_vagas_list)
-quantidade_vaga_df.to_csv('vagas_qtd.csv', index = False, encoding = 'utf-8-sig')
-
-#sep=';', columns= 3, header= ['titulo', 'empresa', 'local'], index = False,
-'''
 fim = time.time()
 print("Tempo de execução: ", fim - ini)
